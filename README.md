@@ -89,14 +89,22 @@ We provide two datasets to test Reg2Inv. The results are in the **./results** fo
 # For testing Real3D-AD
 # unset LD_LIBRARY_PATH
 python test.py real3dad
+#python test.py real3dad --vis
 ```
 ```bash
 # For testing Anomaly-ShapeNet
 # unset LD_LIBRARY_PATH
 python test.py shapenet
+#python test.py shapenet --vis
 ```
-## Acknowledgement
-We thank the great works [GeoTransformer](https://github.com/qinzheng93/GeoTransformer), [RIConv++](https://github.com/cszyzhang/riconv2), [Real3D-AD](https://github.com/M-3LAB/Real3D-AD), [Patchcore](https://github.com/amazon-science/patchcore-inspection), and [CPMF](https://github.com/caoyunkang/CPMF) for assisting with our work.
+We also provide a visualization function to help analyze detection results. You can enable visualization by adding the --vis flag when running testing scripts.
+
+## Acknowledgement 
+- [GeoTransformer](https://github.com/qinzheng93/GeoTransformer)
+- [RIConv++](https://github.com/cszyzhang/riconv2)
+- [Real3D-AD](https://github.com/M-3LAB/Real3D-AD)
+- [Patchcore](https://github.com/amazon-science/patchcore-inspection)
+- [CPMF](https://github.com/caoyunkang/CPMF)
 
 ## Citation
-If you find this repository useful, please consider citing our work:
+If you find this repository useful, please consider citing our work.
