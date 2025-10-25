@@ -28,7 +28,7 @@ python setup.py build develop
 
 ### Dataset Preparation
 1. Please download Real3D-AD dataset from [Real3D-AD dataset](https://github.com/M-3LAB/Real3D-AD), Anomaly-ShapeNet dataset from [Anomaly-ShapeNet dataset](https://github.com/Chopper-233/Anomaly-ShapeNet).
-2. Extract into **./data/**.
+2. Extract into `./data/`.
 ```
 data
 ├── Real3D-AD-PCD
@@ -68,7 +68,7 @@ data
 ```
 
 ### Training
-We provide two datasets to train Reg2Inv, Real3D-AD and Anomaly-ShapeNet. The results are in the **./output_real3dad** folder and **./output_real3dad** folder. For convenience, the released code differs slightly from the version used in the paper. 
+We provide two datasets to train Reg2Inv, Real3D-AD and Anomaly-ShapeNet. The results are in the `./output_real3dad` folder and `./output_real3dad` folder. For convenience, the released code differs slightly from the version used in the paper. 
 In this version, each dataset only needs to be trained once, and the detection performance is comparable to training individual categories separately.
 ```bash
 # For training Real3D-AD
@@ -81,10 +81,10 @@ CUDA_VISIBLE_DEVICES=0 python train_real3dad.py
 CUDA_VISIBLE_DEVICES=0 python train_shapenet.py
 ```
 If you encounter the errors: RuntimeError: CUDA error: CUBLAS_STATUS_INVALID_VALUE when calling 'cublasSgemm( handle, opa, opb, m, n, k, &alpha, a, lda, b, ldb, &beta, c, ldc)'.
-Please try running the following command before training or testing: **unset LD_LIBRARY_PATH**.
+Please try running the following command before training or testing: `unset LD_LIBRARY_PATH`.
 
 ### Testing
-We provide two datasets to test Reg2Inv. The results are in the **./results** folder. We provide pre-trained weights in [Google Drive(Real3D-AD)](https://drive.google.com/file/d/13tXihXZJoF53n_ZQtNVvGlqOr7woNfq0/view?usp=drive_link) and [Google Drive(Anomaly-ShapeNet)](https://drive.google.com/file/d/1PDiMDtdMFxhW_rN5l36JPF7AOI9sguOV/view?usp=drive_link).
+We provide two datasets to test Reg2Inv. The results are in the `./results` folder. We provide pre-trained weights in [Google Drive(Real3D-AD)](https://drive.google.com/file/d/13tXihXZJoF53n_ZQtNVvGlqOr7woNfq0/view?usp=drive_link) and [Google Drive(Anomaly-ShapeNet)](https://drive.google.com/file/d/1PDiMDtdMFxhW_rN5l36JPF7AOI9sguOV/view?usp=drive_link).
 ```bash
 # For testing Real3D-AD
 # unset LD_LIBRARY_PATH
@@ -97,7 +97,7 @@ python test.py real3dad
 python test.py shapenet
 #python test.py shapenet --vis
 ```
-We also provide a visualization function to help analyze detection results. You can enable visualization by adding the --vis flag when running testing scripts.
+We also provide a visualization function to help analyze detection results. You can enable visualization by adding the `--vis` flag when running testing scripts.
 
 ## Acknowledgement 
 - [GeoTransformer](https://github.com/qinzheng93/GeoTransformer)
