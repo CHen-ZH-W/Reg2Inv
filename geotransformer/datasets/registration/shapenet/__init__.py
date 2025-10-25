@@ -1,0 +1,1 @@
+from geotransformer.datasets.registration.shapenet.dataset import ShapeNetPairDataset_train,ShapeNetPairDataset_test,ShapeNetDataset_train

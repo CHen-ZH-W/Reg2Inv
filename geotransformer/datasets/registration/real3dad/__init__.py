@@ -1,0 +1,1 @@
+from geotransformer.datasets.registration.real3dad.dataset import Real3dadPairDataset_train,Real3dadPairDataset_test
