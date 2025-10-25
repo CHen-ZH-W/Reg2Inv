@@ -1,0 +1,15 @@
+open3d
+scipy
+tqdm
+coloredlogs
+easydict
+nibabel
+scikit-learn
+einops
+ipdb
+tensorboard
+tensorboardX
+opencv-python
+seaborn
+SciencePlots
+faiss-gpu
