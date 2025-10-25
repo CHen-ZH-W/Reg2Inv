@@ -89,13 +89,13 @@ We provide two datasets to test Reg2Inv. The results are in the `./results` fold
 # For testing Real3D-AD
 # unset LD_LIBRARY_PATH
 python test.py real3dad
-#python test.py real3dad --vis
+# python test.py real3dad --vis
 ```
 ```bash
 # For testing Anomaly-ShapeNet
 # unset LD_LIBRARY_PATH
 python test.py shapenet
-#python test.py shapenet --vis
+# python test.py shapenet --vis
 ```
 We also provide a visualization function to help analyze detection results. You can enable visualization by adding the `--vis` flag when running testing scripts.
 
