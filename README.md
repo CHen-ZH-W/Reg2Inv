@@ -107,4 +107,15 @@ We also provide a visualization function to help analyze detection results. You 
 - [CPMF](https://github.com/caoyunkang/CPMF)
 
 ## Citation
-If you find this repository useful, please consider citing our work.
+If you find this repository useful, please consider citing our work:
+```bibtex
+@misc{yu2025registrationpowerfulrotationinvariancelearner,
+      title={Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection}, 
+      author={Yuyang Yu and Zhengwei Chen and Xuemiao Xu and Lei Zhang and Haoxin Yang and Yongwei Nie and Shengfeng He},
+      year={2025},
+      eprint={2510.16865},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.16865}, 
+}
+```
