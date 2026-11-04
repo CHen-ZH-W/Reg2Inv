@@ -1,7 +1,6 @@
 # Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection
-> [**NeurIPS 25**] [**Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection**](https://arxiv.org/abs/2510.16865)
->
-> by Yuyang Yu∗, Zhengwei Chen∗, Xuemiao Xu, Lei Zhang, Haoxin Yang,  Yongwei Nie,  Shengfeng He
+> [**Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection**]
+
 
 ![pipeline](assets/pipeline.png)
 >**The overview of Reg2Inv.** In the feature learning stage, the model learns features via a registration task that enforces geometric alignment and multi-scale consistency between paired point clouds. At inference time, the model computes a registration matrix for alignment with the prototype and extracts rotation-invariant features for anomaly detection. The feature extractor is designed to obtain a set of features for anomaly detection and two sets of features for registration.
