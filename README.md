@@ -1,12 +1,6 @@
 # Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection
 > [**Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection**]
 
-
-![pipeline](assets/pipeline.png)
->**The overview of Reg2Inv.** In the feature learning stage, the model learns features via a registration task that enforces geometric alignment and multi-scale consistency between paired point clouds. At inference time, the model computes a registration matrix for alignment with the prototype and extracts rotation-invariant features for anomaly detection. The feature extractor is designed to obtain a set of features for anomaly detection and two sets of features for registration.
-
-***Abstrat:*** 3D anomaly detection in point-cloud data is critical for industrial quality control, aiming to identify structural defects with high reliability. However, current memory bank-based methods often suffer from inconsistent feature transformations and limited discriminative capacity, particularly in capturing local geometric details and achieving rotation invariance. These limitations become more pronounced when registration fails, leading to unreliable detection results.We argue that point-cloud registration plays an essential role not only in aligning geometric structures but also in guiding feature extraction toward rotation-invariant and locally discriminative representations. To this end, we propose a registration-induced, rotation-invariant feature extraction framework that integrates the objectives of point-cloud registration and memory-based anomaly detection. Our key insight is that both tasks rely on modeling local geometric structures and leveraging feature similarity across samples. By embedding feature extraction into the registration learning process, our framework jointly optimizes alignment and representation learning. This integration enables the network to acquire features that are both robust to rotations and highly effective for anomaly detection.Extensive experiments on the Anomaly-ShapeNet and Real3D-AD datasets demonstrate that our method consistently outperforms existing approaches in effectiveness and generalizability.
-
 ##  Getting Started
 
 ### Setup 
@@ -105,16 +99,3 @@ We also provide a visualization function to help analyze detection results. You 
 - [Patchcore](https://github.com/amazon-science/patchcore-inspection)
 - [CPMF](https://github.com/caoyunkang/CPMF)
 
-## Citation
-If you find this repository useful, please consider citing our work:
-```bibtex
-@misc{yu2025registrationpowerfulrotationinvariancelearner,
-      title={Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection}, 
-      author={Yuyang Yu and Zhengwei Chen and Xuemiao Xu and Lei Zhang and Haoxin Yang and Yongwei Nie and Shengfeng He},
-      year={2025},
-      eprint={2510.16865},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2510.16865}, 
-}
-```
