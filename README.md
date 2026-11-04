@@ -1,5 +1,4 @@
 # Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection
-> [**Registration is a Powerful Rotation-Invariance Learner for 3D Anomaly Detection**]
 
 ##  Getting Started
 
